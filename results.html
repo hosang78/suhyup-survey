@@ -472,7 +472,7 @@ async function loadData() {
   document.getElementById('loadingOverlay').classList.remove('hide');
   try {
     let data;
-    if (APPS_SCRIPT_URL && APPS_SCRIPT_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
+    if (APPS_SCRIPT_URL && APPS_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbwxYZPYVrT1Mr_0uX2sYwXVAv88tBt1DQawYvJWNbcTaFopOuWjcpTT128aKIy_USu6/exec') {
       const res = await fetch(APPS_SCRIPT_URL + '?t=' + Date.now());
       data = await res.json();
     } else {
